@@ -21,7 +21,7 @@ body {
 .main {
     background-color: white;
     max-width: 50rem;
-    margin: 0 5vw;
+    margin: 0 auto;
     padding: 0 1.8rem;
 
     border-radius: 25px;
@@ -55,13 +55,23 @@ body {
     justify-content: space-between;
     align-items: center;
 }
-.question img {
+.arrow-icon {
     width: 12px;
     height: 9px;
+    transition: all .3s ease-out;
+}
+/*.arrow-icon:active {
+    transform: rotate(180deg);
+}*/
+.arrow-icon:focus {
+    transform: rotate(180deg);
 }
 .question h2 {
     font-size: 0.9rem;
     font-weight: normal;
+}
+.h2:hover {
+    color: hsl(14, 88%, 65%);
 }
 .answer p {
     font-size: 0.8rem;
@@ -79,7 +89,19 @@ hr {
 
 /* ---------------- HIDDEN ANSWER ---------------- */
 
-.hidden {
+.hidden1 {
+    display: none;
+}
+.hidden2 {
+    display: none;
+}
+.hidden3 {
+    display: none;
+}
+.hidden4 {
+    display: none;
+}
+.hidden5 {
     display: none;
 }
 
@@ -116,7 +138,7 @@ hr {
         position: absolute;
         left: -55%;
         top: -70%;
-        transform: scale(.5);
+        transform: scale(.5); 
     }
     .main__container-box h1 {
         text-align: left;

@@ -1,0 +1,124 @@
+/* font-family: 'Kumbh Sans', sans-serif; */
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-size: 62.5%;
+    font-family: 'Kumbh Sans', sans-serif;
+
+    background-image: linear-gradient(to top, hsl(240, 73%, 65%), hsl(273, 75%, 66%));
+    display: grid;
+    place-items: center;
+}
+
+.main {
+    background-color: white;
+    max-width: 50rem;
+    margin: 0 5vw;
+    padding: 0 1.8rem;
+
+    border-radius: 25px;
+    position: relative;
+    box-shadow: 0 40px 40px rgba(0, 0, 0, 0.2);
+}
+
+.woman-image {
+    width: 15rem;
+    position: absolute;
+
+    top: 0;
+    left: 0;
+    transform: translate(18%, -60%);
+}
+.shadow-image {
+    width: 100%;
+}
+.container-textFAQ {
+    margin: 50px 0;
+    display: grid;
+    gap: 1rem;
+}
+.container-textFAQ h1 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+.question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.question img {
+    width: 12px;
+    height: 9px;
+}
+.question h2 {
+    font-size: 0.9rem;
+    font-weight: normal;
+}
+.answer p {
+    font-size: 0.8rem;
+}
+.ans-quest {
+    display: grid;
+    gap: 0.5rem;
+}
+hr {
+    background-color: hsl(240, 5%, 91%);
+    border: 0 none;
+    height: 1px;
+    
+}
+
+/* ---------------- HIDDEN ANSWER ---------------- */
+
+.hidden {
+    display: none;
+}
+
+
+/* ---------------- MEDIA QUERY ---------------- */
+@media screen and (min-width: 1024px) {
+    .woman-image,
+    .shadow-image {
+        display: none;
+    }
+    .main {
+        border-radius: 15px;
+        position: relative;
+        overflow: hidden;
+        
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    }
+    
+    .main__container-box {
+        display: grid;
+        grid-template-columns: 350px 350px;
+        
+    }
+    .main__container-box::before {
+        content: url(../images/illustration-woman-online-desktop.svg);
+        
+        position: absolute;
+        left: -15%;
+        transform: scale(.8);
+    }
+    .main__container-box::after {
+        content: url(../images/bg-pattern-desktop.svg);
+
+        position: absolute;
+        left: -55%;
+        top: -70%;
+        transform: scale(.5);
+    }
+    .main__container-box h1 {
+        text-align: left;
+    }
+} 

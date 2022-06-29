@@ -75,6 +75,7 @@ body {
 }
 .answer p {
     font-size: 0.8rem;
+    padding-right: 10px;
 }
 .ans-quest {
     display: grid;
@@ -93,11 +94,13 @@ hr {
 
 /* ---------------- HIDDEN ANSWER ---------------- */
 
-.hidden {
+.hidden1,
+.hidden2,
+.hidden3,
+.hidden4,
+.hidden5 {
     display: none;
 }
-
-
 
 /* ---------------- MEDIA QUERY ---------------- */
 @media screen and (min-width: 1024px) {

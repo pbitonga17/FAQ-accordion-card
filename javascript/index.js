@@ -1,5 +1,14 @@
 'use strict';
 
-const arrowIcon = document.querySelectorAll('.arrow-icon');
-const h2 = document.querySelectorAll('.h2');
-const showAnswer1 = document.querySelectorAll('.hidden1');
+const arrowBtn = document.querySelectorAll('.btn');
+const hiddenAnswer = document.querySelectorAll('.answer');
+
+let x;
+
+arrowBtn.forEach(arrowBtn => {
+    arrowBtn.addEventListener('click', () => {
+        hiddenAnswer.forEach(hiddenAnswer => {
+            hiddenAnswer.classList.remove('hidden');
+        })
+    })
+})

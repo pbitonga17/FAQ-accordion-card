@@ -84,26 +84,19 @@ hr {
     background-color: hsl(240, 5%, 91%);
     border: 0 none;
     height: 1px;
-    
+}
+
+.btn {
+    border: none;
+    background-color: white;
 }
 
 /* ---------------- HIDDEN ANSWER ---------------- */
 
-.hidden1 {
+.hidden {
     display: none;
 }
-.hidden2 {
-    display: none;
-}
-.hidden3 {
-    display: none;
-}
-.hidden4 {
-    display: none;
-}
-.hidden5 {
-    display: none;
-}
+
 
 
 /* ---------------- MEDIA QUERY ---------------- */

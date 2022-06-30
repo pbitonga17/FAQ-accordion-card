@@ -59,18 +59,14 @@ body {
     width: 12px;
     height: 9px;
     transition: all .3s ease-out;
+    animation-name: arrow;
 }
-/*.arrow-icon:active {
-    transform: rotate(180deg);
-}*/
-.arrow-icon:focus {
-    transform: rotate(180deg);
-}
+
 .question h2 {
     font-size: 0.9rem;
     font-weight: normal;
 }
-.h2:hover {
+.question:hover {
     color: hsl(14, 88%, 65%);
 }
 .answer p {
@@ -94,12 +90,30 @@ hr {
 
 /* ---------------- HIDDEN ANSWER ---------------- */
 
-.hidden1,
-.hidden2,
-.hidden3,
-.hidden4,
-.hidden5 {
+.hidden {
     display: none;
+    animation-name: hide;
+    animation-duration: .3s;
+}
+/* ---------------- A N I M A T I O N ---------------- */
+
+@keyframes hide {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes arrow {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(180deg);
+    }
 }
 
 /* ---------------- MEDIA QUERY ---------------- */
@@ -126,6 +140,7 @@ hr {
         
         position: absolute;
         left: -15%;
+        top: 5%;
         transform: scale(.8);
     }
     .main__container-box::after {

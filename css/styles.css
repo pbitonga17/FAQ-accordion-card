@@ -60,13 +60,17 @@ body {
     height: 9px;
     transition: all .3s ease-out;
     animation-name: arrow;
+    cursor: pointer;
 }
-
+/*.arrow-icon:active {
+    transform: rotate(180deg);
+}*/
 .question h2 {
     font-size: 0.9rem;
     font-weight: normal;
 }
 .question:hover {
+    cursor: pointer;
     color: hsl(14, 88%, 65%);
 }
 .answer p {

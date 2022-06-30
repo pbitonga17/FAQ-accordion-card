@@ -5,6 +5,7 @@ const hiddenAnswer = document.querySelectorAll('.hidden');
 const arrowBtn = document.querySelectorAll('button');
 const h2Text = document.querySelectorAll('.h2');
 
+//show answer
 function showAnswer(button) {
     hiddenAnswer.forEach(hiddenAnswer => {
         hiddenAnswer.style.display = 'none';
@@ -14,11 +15,28 @@ function showAnswer(button) {
 }
 
 
+/* -------------- CLICK EVENT -------------- */
+
+
+
 arrowBtn.forEach(arrowBtn => {
     arrowBtn.onclick = function() {
         showAnswer(this.dataset.button);
     }
 })
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -152,10 +152,11 @@ hr {
 
         position: absolute;
         left: -55%;
-        top: -70%;
+        top: -60%;
         transform: scale(.5); 
     }
     .main__container-box h1 {
         text-align: left;
     }
 } 
+
